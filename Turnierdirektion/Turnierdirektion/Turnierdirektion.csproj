@@ -45,11 +45,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="DirektionView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="DirektionView.Designer.cs">
+      <DependentUpon>DirektionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IObservable.cs" />
+    <Compile Include="IObserver.cs" />
+    <Compile Include="THauptController.cs" />
+    <Compile Include="ZuschauerView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZuschauerView.Designer.cs">
+      <DependentUpon>ZuschauerView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

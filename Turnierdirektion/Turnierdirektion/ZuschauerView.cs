@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Turnierdirektion
 {
-    public partial class Form1 : Form
+    public partial class ZuschauerView : Form, IObserver
     {
-        public Form1()
+        public ZuschauerView()
         {
             InitializeComponent();
+        }
+
+        public void OnModelPropertyChanged(string PropertyMessage)
+        {
+            throw new NotImplementedException();
         }
     }
 }

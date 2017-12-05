@@ -1,6 +1,6 @@
 ﻿namespace Turnierdirektion
 {
-    partial class Form1
+    partial class ZuschauerView
     {
         /// <summary>
         /// Erforderliche Designervariable.
