@@ -51,7 +51,7 @@
             this.cmbPunktesystem.FormattingEnabled = true;
             this.cmbPunktesystem.Location = new System.Drawing.Point(12, 39);
             this.cmbPunktesystem.Name = "cmbPunktesystem";
-            this.cmbPunktesystem.Size = new System.Drawing.Size(235, 21);
+            this.cmbPunktesystem.Size = new System.Drawing.Size(316, 21);
             this.cmbPunktesystem.TabIndex = 1;
             // 
             // label1
@@ -74,7 +74,7 @@
             // 
             // btnHinzufuegen
             // 
-            this.btnHinzufuegen.Location = new System.Drawing.Point(91, 83);
+            this.btnHinzufuegen.Location = new System.Drawing.Point(172, 83);
             this.btnHinzufuegen.Name = "btnHinzufuegen";
             this.btnHinzufuegen.Size = new System.Drawing.Size(75, 23);
             this.btnHinzufuegen.TabIndex = 4;
@@ -84,7 +84,7 @@
             // 
             // btnEntfernen
             // 
-            this.btnEntfernen.Location = new System.Drawing.Point(172, 83);
+            this.btnEntfernen.Location = new System.Drawing.Point(253, 82);
             this.btnEntfernen.Name = "btnEntfernen";
             this.btnEntfernen.Size = new System.Drawing.Size(75, 23);
             this.btnEntfernen.TabIndex = 5;
@@ -114,6 +114,7 @@
             // 
             // ErstellenView
             // 
+            this.AcceptButton = this.btnHinzufuegen;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(441, 331);

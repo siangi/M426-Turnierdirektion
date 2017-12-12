@@ -39,7 +39,7 @@
             // 
             // btnSpeichern
             // 
-            this.btnSpeichern.Location = new System.Drawing.Point(679, 8);
+            this.btnSpeichern.Location = new System.Drawing.Point(613, 8);
             this.btnSpeichern.Name = "btnSpeichern";
             this.btnSpeichern.Size = new System.Drawing.Size(64, 23);
             this.btnSpeichern.TabIndex = 17;
@@ -50,7 +50,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(259, 12);
+            this.label3.Location = new System.Drawing.Point(240, 13);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(10, 13);
             this.label3.TabIndex = 16;
@@ -59,7 +59,7 @@
             // chkVerlängerung
             // 
             this.chkVerlängerung.AutoSize = true;
-            this.chkVerlängerung.Location = new System.Drawing.Point(544, 12);
+            this.chkVerlängerung.Location = new System.Drawing.Point(489, 9);
             this.chkVerlängerung.Name = "chkVerlängerung";
             this.chkVerlängerung.Size = new System.Drawing.Size(118, 17);
             this.chkVerlängerung.TabIndex = 15;
@@ -68,14 +68,14 @@
             // 
             // txtGasttore
             // 
-            this.txtGasttore.Location = new System.Drawing.Point(285, 9);
+            this.txtGasttore.Location = new System.Drawing.Point(256, 8);
             this.txtGasttore.Name = "txtGasttore";
             this.txtGasttore.Size = new System.Drawing.Size(100, 20);
             this.txtGasttore.TabIndex = 14;
             // 
             // txtHeimtore
             // 
-            this.txtHeimtore.Location = new System.Drawing.Point(144, 9);
+            this.txtHeimtore.Location = new System.Drawing.Point(134, 9);
             this.txtHeimtore.Name = "txtHeimtore";
             this.txtHeimtore.Size = new System.Drawing.Size(100, 20);
             this.txtHeimtore.TabIndex = 13;
@@ -83,7 +83,7 @@
             // cmbGast
             // 
             this.cmbGast.FormattingEnabled = true;
-            this.cmbGast.Location = new System.Drawing.Point(402, 9);
+            this.cmbGast.Location = new System.Drawing.Point(362, 8);
             this.cmbGast.Name = "cmbGast";
             this.cmbGast.Size = new System.Drawing.Size(121, 21);
             this.cmbGast.TabIndex = 12;
@@ -108,7 +108,7 @@
             this.Controls.Add(this.cmbGast);
             this.Controls.Add(this.cmbHeim);
             this.Name = "MatchControl";
-            this.Size = new System.Drawing.Size(753, 41);
+            this.Size = new System.Drawing.Size(687, 41);
             this.ResumeLayout(false);
             this.PerformLayout();
 

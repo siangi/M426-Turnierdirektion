@@ -20,7 +20,7 @@ namespace Turnierdirektion
 
                 for (int i = 0; i < lstTeilnehmer.Items.Count; i++)
                 {
-                    Result.Add(lstTeilnehmer.Items[i].ToString());
+                    Result.Add(lstTeilnehmer.Items[i].Text);
                 }
 
                 return Result;
