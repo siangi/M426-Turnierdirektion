@@ -57,6 +57,8 @@
     <Compile Include="ErstellenView.Designer.cs">
       <DependentUpon>ErstellenView.cs</DependentUpon>
     </Compile>
+    <Compile Include="FussballSystem.cs" />
+    <Compile Include="IPunktesystem.cs" />
     <Compile Include="TeilnehmerDialog.cs">
       <SubType>Form</SubType>
     </Compile>

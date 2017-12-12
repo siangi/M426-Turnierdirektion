@@ -26,6 +26,7 @@ namespace Turnierdirektion
                 return Result;
             }
         }
+
         public ErstellenView()
         {
             InitializeComponent();
@@ -43,7 +44,27 @@ namespace Turnierdirektion
             string NewName = Dialog.Execute();
 
             lstTeilnehmer.Items.Add(NewName);
-            
+        }
+
+        private void btnEntfernen_Click(object sender, EventArgs e)
+        {
+            if(lstTeilnehmer.SelectedItems.Count > 0)
+            {
+                foreach(ListViewItem item in lstTeilnehmer.SelectedItems)
+                {
+                    item.Remove();
+                }
+            }
+        }
+
+        private void btnAbbrechen_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnTurnierErstellen_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

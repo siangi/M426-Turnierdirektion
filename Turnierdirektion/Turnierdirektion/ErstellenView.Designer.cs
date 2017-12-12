@@ -33,6 +33,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnHinzufuegen = new System.Windows.Forms.Button();
+            this.btnEntfernen = new System.Windows.Forms.Button();
+            this.btnTurnierErstellen = new System.Windows.Forms.Button();
+            this.btnAbbrechen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lstTeilnehmer
@@ -48,7 +51,7 @@
             this.cmbPunktesystem.FormattingEnabled = true;
             this.cmbPunktesystem.Location = new System.Drawing.Point(12, 39);
             this.cmbPunktesystem.Name = "cmbPunktesystem";
-            this.cmbPunktesystem.Size = new System.Drawing.Size(198, 21);
+            this.cmbPunktesystem.Size = new System.Drawing.Size(235, 21);
             this.cmbPunktesystem.TabIndex = 1;
             // 
             // label1
@@ -71,7 +74,7 @@
             // 
             // btnHinzufuegen
             // 
-            this.btnHinzufuegen.Location = new System.Drawing.Point(354, 285);
+            this.btnHinzufuegen.Location = new System.Drawing.Point(91, 83);
             this.btnHinzufuegen.Name = "btnHinzufuegen";
             this.btnHinzufuegen.Size = new System.Drawing.Size(75, 23);
             this.btnHinzufuegen.TabIndex = 4;
@@ -79,11 +82,44 @@
             this.btnHinzufuegen.UseVisualStyleBackColor = true;
             this.btnHinzufuegen.Click += new System.EventHandler(this.btnHinzufuegen_Click);
             // 
+            // btnEntfernen
+            // 
+            this.btnEntfernen.Location = new System.Drawing.Point(172, 83);
+            this.btnEntfernen.Name = "btnEntfernen";
+            this.btnEntfernen.Size = new System.Drawing.Size(75, 23);
+            this.btnEntfernen.TabIndex = 5;
+            this.btnEntfernen.Text = "Entfernen";
+            this.btnEntfernen.UseVisualStyleBackColor = true;
+            this.btnEntfernen.Click += new System.EventHandler(this.btnEntfernen_Click);
+            // 
+            // btnTurnierErstellen
+            // 
+            this.btnTurnierErstellen.Location = new System.Drawing.Point(334, 296);
+            this.btnTurnierErstellen.Name = "btnTurnierErstellen";
+            this.btnTurnierErstellen.Size = new System.Drawing.Size(94, 23);
+            this.btnTurnierErstellen.TabIndex = 6;
+            this.btnTurnierErstellen.Text = "Turnier erstellen";
+            this.btnTurnierErstellen.UseVisualStyleBackColor = true;
+            this.btnTurnierErstellen.Click += new System.EventHandler(this.btnTurnierErstellen_Click);
+            // 
+            // btnAbbrechen
+            // 
+            this.btnAbbrechen.Location = new System.Drawing.Point(253, 296);
+            this.btnAbbrechen.Name = "btnAbbrechen";
+            this.btnAbbrechen.Size = new System.Drawing.Size(75, 23);
+            this.btnAbbrechen.TabIndex = 7;
+            this.btnAbbrechen.Text = "Abbrechen";
+            this.btnAbbrechen.UseVisualStyleBackColor = true;
+            this.btnAbbrechen.Click += new System.EventHandler(this.btnAbbrechen_Click);
+            // 
             // ErstellenView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(441, 331);
+            this.Controls.Add(this.btnAbbrechen);
+            this.Controls.Add(this.btnTurnierErstellen);
+            this.Controls.Add(this.btnEntfernen);
             this.Controls.Add(this.btnHinzufuegen);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -103,5 +139,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnHinzufuegen;
+        private System.Windows.Forms.Button btnEntfernen;
+        private System.Windows.Forms.Button btnTurnierErstellen;
+        private System.Windows.Forms.Button btnAbbrechen;
     }
 }
