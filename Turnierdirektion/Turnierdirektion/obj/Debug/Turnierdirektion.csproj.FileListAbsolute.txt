@@ -9,3 +9,5 @@ C:\Users\bbzw\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdir
 C:\Users\bbzw\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.exe
 C:\Users\bbzw\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.pdb
 C:\Users\bbzw\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.ErstellenView.resources
+C:\Users\bbzw\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.DirektionView.resources
+C:\Users\bbzw\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.MatchControl.resources

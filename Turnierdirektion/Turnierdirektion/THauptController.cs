@@ -10,6 +10,7 @@ namespace Turnierdirektion
     {
         TTurnier Turnier = new TTurnier();
         ErstellenView m_erstellenView = null;
+        DirektionView m_direktionView = null;
         public static readonly string[] Punktesysteme = { "Fussball (Sieg 3 P. Unentschieden 1 P.)", "Eishockey (Sieg 3P. Sieg nach Nachspielzeit 2 P.)" };
 
         public void Run()
@@ -21,6 +22,10 @@ namespace Turnierdirektion
             List<string> Teilnehmer = m_erstellenView.Teilnehmer;
 
             Turnier.Teilnehmer = TeilnehmerFromStringList(Teilnehmer);
+            Turnier.Punktesystem = CreatePunkteSystem(selectedIndex);
+
+            m_direktionView = new DirektionView(Turnier.Punktesystem, Turnier.Teilnehmer);
+            m_direktionView.ShowDialog();
         }
 
         private List<Teilnehmer> TeilnehmerFromStringList(List<string> StringList)
@@ -46,8 +51,6 @@ namespace Turnierdirektion
                 case 1:
                     punktesystem = new EishockeySystem();
                     break;
-
-
             }
             return punktesystem;
         }

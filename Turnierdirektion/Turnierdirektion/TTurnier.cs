@@ -27,5 +27,10 @@ namespace Turnierdirektion
 
             m_Observers.Add(Value);
         }
+
+        public void OnMatchSave(object sender, EventArgs e)
+        {
+            InvokePropertyChanged("MatchSaved");
+        }
     }
 }

@@ -51,6 +51,7 @@
     <Compile Include="DirektionView.Designer.cs">
       <DependentUpon>DirektionView.cs</DependentUpon>
     </Compile>
+    <Compile Include="EishockeySystem.cs" />
     <Compile Include="ErstellenView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +60,12 @@
     </Compile>
     <Compile Include="FussballSystem.cs" />
     <Compile Include="IPunktesystem.cs" />
+    <Compile Include="MatchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MatchControl.Designer.cs">
+      <DependentUpon>MatchControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="TeilnehmerDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,8 +86,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DirektionView.resx">
+      <DependentUpon>DirektionView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ErstellenView.resx">
       <DependentUpon>ErstellenView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MatchControl.resx">
+      <DependentUpon>MatchControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TeilnehmerDialog.resx">
       <DependentUpon>TeilnehmerDialog.cs</DependentUpon>

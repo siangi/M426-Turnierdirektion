@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Turnierdirektion
 {
-    interface IPunktesystem
+    public interface IPunktesystem
     {
         void MatchPunkteVerteilen(Match Value);
     }
