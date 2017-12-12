@@ -14,9 +14,10 @@ namespace Turnierdirektion
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ZuschauerView());
+        //    Application.EnableVisualStyles();
+        //    Application.SetCompatibleTextRenderingDefault(false);
+            THauptController MainControl = new THauptController();
+            MainControl.Run();
         }
     }
 }

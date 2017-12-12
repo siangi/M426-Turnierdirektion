@@ -1,0 +1,11 @@
+C:\Users\bbzw\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\bin\Debug\Turnierdirektion.exe.config
+C:\Users\bbzw\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\bin\Debug\Turnierdirektion.exe
+C:\Users\bbzw\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\bin\Debug\Turnierdirektion.pdb
+C:\Users\bbzw\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.csprojResolveAssemblyReference.cache
+C:\Users\bbzw\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.TeilnehmerDialog.resources
+C:\Users\bbzw\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.Properties.Resources.resources
+C:\Users\bbzw\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.csproj.GenerateResource.Cache
+C:\Users\bbzw\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.csproj.CoreCompileInputs.cache
+C:\Users\bbzw\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.exe
+C:\Users\bbzw\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.pdb
+C:\Users\bbzw\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.ErstellenView.resources

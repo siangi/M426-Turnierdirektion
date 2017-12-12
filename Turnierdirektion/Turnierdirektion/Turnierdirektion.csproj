@@ -51,6 +51,18 @@
     <Compile Include="DirektionView.Designer.cs">
       <DependentUpon>DirektionView.cs</DependentUpon>
     </Compile>
+    <Compile Include="ErstellenView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErstellenView.Designer.cs">
+      <DependentUpon>ErstellenView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TeilnehmerDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeilnehmerDialog.Designer.cs">
+      <DependentUpon>TeilnehmerDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="IObservable.cs" />
     <Compile Include="IObserver.cs" />
     <Compile Include="Match.cs" />
@@ -65,6 +77,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ErstellenView.resx">
+      <DependentUpon>ErstellenView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeilnehmerDialog.resx">
+      <DependentUpon>TeilnehmerDialog.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

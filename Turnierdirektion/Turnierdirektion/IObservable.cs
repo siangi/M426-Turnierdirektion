@@ -9,5 +9,7 @@ namespace Turnierdirektion
     public interface IObservable
     {
         void Register(IObserver Value);
+
+        void InvokePropertyChanged(string Message);
     }
 }
