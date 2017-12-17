@@ -23,5 +23,7 @@ namespace Turnierdirektion
         public Teilnehmer Teilnehmer2 { get; set; }
 
         public int Punkte2 { get; set; }
+
+        public bool IsVerlaengerung { get; set; }
     }
 }

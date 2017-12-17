@@ -13,7 +13,7 @@ namespace Turnierdirektion
     public partial class MatchControl : UserControl
     {
         private SaveMatchMethod m_OnSavematch = null;
-        public delegate void SaveMatchMethod(Teilnehmer HeimTeilnehmer, Teilnehmer GastTeilnehmer, int Heimtore, int Gasttore);
+        public delegate void SaveMatchMethod(Teilnehmer HeimTeilnehmer, Teilnehmer GastTeilnehmer, int Heimtore, int Gasttore, bool IsVerlaengerung);
         public event SaveMatchMethod OnSaveMatch { add { m_OnSavematch = value; } remove { m_OnSavematch = null; } }
 
         private List<Teilnehmer> m_TeilnehmerListe;
@@ -39,7 +39,7 @@ namespace Turnierdirektion
             var gasttore = int.Parse(txtGasttore.Text);
 
             if (m_OnSavematch != null && cmbHeim.SelectedItem != cmbGast.SelectedItem)
-                m_OnSavematch(heimTeilnehmer, gastTeilnehmer, heimtore, gasttore);
+                m_OnSavematch(heimTeilnehmer, gastTeilnehmer, heimtore, gasttore, chkVerlaengerung.Checked);
         }
     }
 }

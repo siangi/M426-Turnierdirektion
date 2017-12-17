@@ -30,7 +30,7 @@
         {
             this.btnSpeichern = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.chkVerlängerung = new System.Windows.Forms.CheckBox();
+            this.chkVerlaengerung = new System.Windows.Forms.CheckBox();
             this.txtGasttore = new System.Windows.Forms.TextBox();
             this.txtHeimtore = new System.Windows.Forms.TextBox();
             this.cmbGast = new System.Windows.Forms.ComboBox();
@@ -58,13 +58,13 @@
             // 
             // chkVerlängerung
             // 
-            this.chkVerlängerung.AutoSize = true;
-            this.chkVerlängerung.Location = new System.Drawing.Point(489, 9);
-            this.chkVerlängerung.Name = "chkVerlängerung";
-            this.chkVerlängerung.Size = new System.Drawing.Size(118, 17);
-            this.chkVerlängerung.TabIndex = 15;
-            this.chkVerlängerung.Text = "Nach Verlängerung";
-            this.chkVerlängerung.UseVisualStyleBackColor = true;
+            this.chkVerlaengerung.AutoSize = true;
+            this.chkVerlaengerung.Location = new System.Drawing.Point(489, 9);
+            this.chkVerlaengerung.Name = "chkVerlängerung";
+            this.chkVerlaengerung.Size = new System.Drawing.Size(118, 17);
+            this.chkVerlaengerung.TabIndex = 15;
+            this.chkVerlaengerung.Text = "Nach Verlängerung";
+            this.chkVerlaengerung.UseVisualStyleBackColor = true;
             // 
             // txtGasttore
             // 
@@ -102,7 +102,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnSpeichern);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.chkVerlängerung);
+            this.Controls.Add(this.chkVerlaengerung);
             this.Controls.Add(this.txtGasttore);
             this.Controls.Add(this.txtHeimtore);
             this.Controls.Add(this.cmbGast);
@@ -118,7 +118,7 @@
 
         private System.Windows.Forms.Button btnSpeichern;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox chkVerlängerung;
+        private System.Windows.Forms.CheckBox chkVerlaengerung;
         private System.Windows.Forms.TextBox txtGasttore;
         private System.Windows.Forms.TextBox txtHeimtore;
         private System.Windows.Forms.ComboBox cmbGast;

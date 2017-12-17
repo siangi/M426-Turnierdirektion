@@ -23,3 +23,15 @@ C:\Users\Mauro\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdi
 C:\Users\Mauro\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.TeilnehmerDialog.resources
 C:\Users\Mauro\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.Properties.Resources.resources
 C:\Users\Mauro\Documents\GitHub\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.csproj.GenerateResource.Cache
+C:\Users\Simon\Documents\Schule\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\bin\Debug\Turnierdirektion.exe.config
+C:\Users\Simon\Documents\Schule\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.exe
+C:\Users\Simon\Documents\Schule\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.pdb
+C:\Users\Simon\Documents\Schule\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\bin\Debug\Turnierdirektion.exe
+C:\Users\Simon\Documents\Schule\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\bin\Debug\Turnierdirektion.pdb
+C:\Users\Simon\Documents\Schule\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.csprojResolveAssemblyReference.cache
+C:\Users\Simon\Documents\Schule\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.DirektionView.resources
+C:\Users\Simon\Documents\Schule\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.ErstellenView.resources
+C:\Users\Simon\Documents\Schule\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.MatchControl.resources
+C:\Users\Simon\Documents\Schule\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.TeilnehmerDialog.resources
+C:\Users\Simon\Documents\Schule\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.Properties.Resources.resources
+C:\Users\Simon\Documents\Schule\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.csproj.GenerateResource.Cache

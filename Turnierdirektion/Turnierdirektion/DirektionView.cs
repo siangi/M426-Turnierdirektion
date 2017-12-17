@@ -26,7 +26,7 @@ namespace Turnierdirektion
 
         }
 
-        public void SendMatchToModel(Teilnehmer HeimTeilnehmer, Teilnehmer GastTeilnehmer, int Heimtore, int Gasttore)
+        public void SendMatchToModel(Teilnehmer HeimTeilnehmer, Teilnehmer GastTeilnehmer, int Heimtore, int Gasttore, bool IsVerlaengerung)
         {
             Match Match = new Match(HeimTeilnehmer, Heimtore, GastTeilnehmer, Gasttore);
             Punktesystem.MatchPunkteVerteilen(Match);
@@ -34,7 +34,9 @@ namespace Turnierdirektion
 
         private void btnHinzufuegen_Click(object sender, EventArgs e)
         {
-            pnlMatches.Controls.Add(new MatchControl(Teilnehmerliste));
+            MatchControl MatchCont = new MatchControl(Teilnehmerliste);
+            MatchCont.OnSaveMatch += SendMatchToModel;
+            pnlMatches.Controls.Add(MatchCont);
         }
     }
 }
