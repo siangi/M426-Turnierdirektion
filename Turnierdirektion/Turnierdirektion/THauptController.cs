@@ -8,9 +8,11 @@ namespace Turnierdirektion
 {
     public class THauptController
     {
-        TTurnier Turnier = new TTurnier();
-        ErstellenView m_erstellenView = null;
-        DirektionView m_direktionView = null;
+        private TTurnier Turnier = new TTurnier();
+        private ErstellenView m_erstellenView = null;
+        private DirektionView m_direktionView = null;
+        private ZuschauerView m_zuschauerView = null;
+
         public static readonly string[] Punktesysteme = { "Fussball (Sieg 3 P. Unentschieden 1 P.)", "Eishockey (Sieg 3P. Sieg nach Nachspielzeit 2 P.)" };
 
         public void Run()
@@ -24,7 +26,13 @@ namespace Turnierdirektion
             Turnier.Teilnehmer = TeilnehmerFromStringList(Teilnehmer);
             Turnier.Punktesystem = CreatePunkteSystem(selectedIndex);
 
-            m_direktionView = new DirektionView(Turnier.Punktesystem, Turnier.Teilnehmer);
+            m_direktionView = new DirektionView(Turnier, Turnier.Teilnehmer);
+            m_zuschauerView = new ZuschauerView(Turnier);
+
+            Turnier.Register(m_direktionView);
+            Turnier.Register(m_zuschauerView);
+
+            m_zuschauerView.Show();            
             m_direktionView.ShowDialog();
         }
 

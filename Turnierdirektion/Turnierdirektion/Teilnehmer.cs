@@ -8,12 +8,12 @@ namespace Turnierdirektion
 {
     public class Teilnehmer
     {
+        public string Name { get; set; }
+        public int Punkte { get; set; }
+
         public Teilnehmer(string name)
         {
             this.Name = name;
         }
-
-        public string Name { get; set; }
-        public int Punkte { get; set; }
     }
 }

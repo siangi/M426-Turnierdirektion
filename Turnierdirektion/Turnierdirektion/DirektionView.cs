@@ -12,13 +12,15 @@ namespace Turnierdirektion
 {
     public partial class DirektionView : Form, IObserver
     {
+
         List<Teilnehmer> Teilnehmerliste;
-        IPunktesystem Punktesystem = null;
-        public DirektionView(IPunktesystem punktesystem, List<Teilnehmer> teilnehmerliste)
+        private TTurnier Model = null;
+
+        public DirektionView(TTurnier Model, List<Teilnehmer> teilnehmerliste)
         {
             InitializeComponent();
-            Punktesystem = punktesystem;
             Teilnehmerliste = teilnehmerliste;
+            this.Model = Model;
         }
 
         public void OnModelPropertyChanged(string PropertyMessage)
@@ -26,16 +28,10 @@ namespace Turnierdirektion
 
         }
 
-        public void SendMatchToModel(Teilnehmer HeimTeilnehmer, Teilnehmer GastTeilnehmer, int Heimtore, int Gasttore, bool IsVerlaengerung)
-        {
-            Match Match = new Match(HeimTeilnehmer, Heimtore, GastTeilnehmer, Gasttore);
-            Punktesystem.MatchPunkteVerteilen(Match);
-        }
-
         private void btnHinzufuegen_Click(object sender, EventArgs e)
         {
             MatchControl MatchCont = new MatchControl(Teilnehmerliste);
-            MatchCont.OnSaveMatch += SendMatchToModel;
+            MatchCont.OnSaveMatch += Model.OnMatchSave;
             pnlMatches.Controls.Add(MatchCont);
         }
     }

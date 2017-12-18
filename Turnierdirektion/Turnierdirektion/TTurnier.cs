@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Turnierdirektion
 {
-    class TTurnier : IObservable
+    public class TTurnier : IObservable
     {
         private List<IObserver> m_Observers = new List<IObserver>();
         public List<Teilnehmer> Teilnehmer { get; set; }
@@ -28,9 +28,18 @@ namespace Turnierdirektion
             m_Observers.Add(Value);
         }
 
-        public void OnMatchSave(object sender, EventArgs e)
+        public void OnMatchSave(Teilnehmer HeimTeilnehmer, Teilnehmer GastTeilnehmer, int Heimtore, int Gasttore, bool IsVerlaengerung)
         {
+            Match Match = new Match(HeimTeilnehmer, Heimtore, GastTeilnehmer, Gasttore);
+            Punktesystem.MatchPunkteVerteilen(Match);
             InvokePropertyChanged("MatchSaved");
+        }
+
+        public List<Teilnehmer> GetTeilnehemrSortiert()
+        {
+            List<Teilnehmer> SortedList = Teilnehmer.OrderByDescending(o => o.Punkte).ToList();
+
+            return SortedList;
         }
     }
 }

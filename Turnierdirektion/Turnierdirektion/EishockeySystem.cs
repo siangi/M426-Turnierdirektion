@@ -19,12 +19,15 @@ namespace Turnierdirektion
         public void MatchPunkteVerteilen(Match Value)
         {
             SetSiegerVerlierer(Value);
-            
+
             if (Value.IsVerlaengerung)
             {
                 Sieger.Punkte += PUNKTE_SIEG_NACHSPIEL;
                 Verlierer.Punkte += PUNKTE_VERLOREN_NACHSPIEL;
             }
+            else
+            if (Sieger == null || Verlierer == null)
+                return;
             else
             {
                 Sieger.Punkte += PUNKTE_SIEG;

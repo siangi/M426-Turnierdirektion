@@ -12,14 +12,21 @@ namespace Turnierdirektion
 {
     public partial class ZuschauerView : Form, IObserver
     {
-        public ZuschauerView()
+        List<Teilnehmer> Rangliste = null;
+        TTurnier Model = null;
+
+        public ZuschauerView(TTurnier Model)
         {
             InitializeComponent();
+            this.Model = Model;
         }
 
         public void OnModelPropertyChanged(string PropertyMessage)
         {
-            throw new NotImplementedException();
+            if (PropertyMessage == "MatchSaved")
+            {
+                Rangliste = Model.GetTeilnehemrSortiert();
+            }
         }
     }
 }
