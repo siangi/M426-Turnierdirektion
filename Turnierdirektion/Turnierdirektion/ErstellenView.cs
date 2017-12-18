@@ -12,8 +12,9 @@ namespace Turnierdirektion
 {
     public partial class ErstellenView : Form
     {
-        public int SelectedPunkteSystem { get{ return cmbPunktesystem.SelectedIndex; }  }
-        public List<string> Teilnehmer {
+        public int SelectedPunkteSystem { get { return cmbPunktesystem.SelectedIndex; } }
+        public List<string> Teilnehmer
+        {
             get
             {
                 List<string> Result = new List<string>();
@@ -43,14 +44,17 @@ namespace Turnierdirektion
             TeilnehmerDialog Dialog = new TeilnehmerDialog();
             string NewName = Dialog.Execute();
 
-            lstTeilnehmer.Items.Add(NewName);
+            if (!Teilnehmer.Contains(NewName))
+            {
+                lstTeilnehmer.Items.Add(NewName);
+            }
         }
 
         private void btnEntfernen_Click(object sender, EventArgs e)
         {
-            if(lstTeilnehmer.SelectedItems.Count > 0)
+            if (lstTeilnehmer.SelectedItems.Count > 0)
             {
-                foreach(ListViewItem item in lstTeilnehmer.SelectedItems)
+                foreach (ListViewItem item in lstTeilnehmer.SelectedItems)
                 {
                     item.Remove();
                 }
@@ -64,6 +68,19 @@ namespace Turnierdirektion
 
         private void btnTurnierErstellen_Click(object sender, EventArgs e)
         {
+            if (cmbPunktesystem.SelectedIndex == -1)
+            {
+                cmbPunktesystem.Focus();
+                cmbPunktesystem.DroppedDown = true;
+                return;
+            }
+
+            if (Teilnehmer.Count < 2)
+            {
+                btnHinzufuegen_Click(btnHinzufuegen, e);
+                return;
+            }
+
             this.Close();
         }
     }
