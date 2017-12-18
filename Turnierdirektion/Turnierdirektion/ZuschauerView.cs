@@ -38,6 +38,7 @@ namespace Turnierdirektion
                 var teilnehmer = Rangliste[i];
                 var lstItem = new ListViewItem((i + 1).ToString());
                 lstItem.SubItems.Add(teilnehmer.Name);
+                lstItem.SubItems.Add(teilnehmer.ToreErzielt + " : " + teilnehmer.ToreErhalten);
                 lstItem.SubItems.Add(teilnehmer.Punkte.ToString());
 
                 lstTabelle.Items.Add(lstItem);

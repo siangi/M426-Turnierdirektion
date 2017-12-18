@@ -10,6 +10,8 @@ namespace Turnierdirektion
     {
         public string Name { get; set; }
         public int Punkte { get; set; }
+        public int ToreErzielt { get; set; }
+        public int ToreErhalten { get; set; }
 
         public Teilnehmer(string name)
         {

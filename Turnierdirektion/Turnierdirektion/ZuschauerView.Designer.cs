@@ -32,6 +32,7 @@
             this.colRang = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colTeilnehmer = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colPunkte = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colTordifferenz = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // lstTabelle
@@ -39,6 +40,7 @@
             this.lstTabelle.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.colRang,
             this.colTeilnehmer,
+            this.colTordifferenz,
             this.colPunkte});
             this.lstTabelle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lstTabelle.Location = new System.Drawing.Point(0, 0);
@@ -61,6 +63,11 @@
             // 
             this.colPunkte.Text = "Punkte";
             // 
+            // colTordifferenz
+            // 
+            this.colTordifferenz.Text = "Tordifferenz";
+            this.colTordifferenz.Width = 84;
+            // 
             // ZuschauerView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -79,6 +86,7 @@
         private System.Windows.Forms.ColumnHeader colRang;
         private System.Windows.Forms.ColumnHeader colTeilnehmer;
         private System.Windows.Forms.ColumnHeader colPunkte;
+        private System.Windows.Forms.ColumnHeader colTordifferenz;
     }
 }
 

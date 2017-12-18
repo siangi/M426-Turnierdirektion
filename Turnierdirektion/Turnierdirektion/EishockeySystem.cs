@@ -19,6 +19,7 @@ namespace Turnierdirektion
         public void MatchPunkteVerteilen(Match Value)
         {
             SetSiegerVerlierer(Value);
+            SetTordifferenz(Value);
 
             if (Value.IsVerlaengerung)
             {
@@ -50,6 +51,15 @@ namespace Turnierdirektion
                 Sieger = Value.Teilnehmer2;
                 Verlierer = Value.Teilnehmer1;
             }
+        }
+
+        private void SetTordifferenz(Match value)
+        {
+            value.Teilnehmer1.ToreErzielt += value.Punkte1;
+            value.Teilnehmer1.ToreErhalten += value.Punkte2;
+
+            value.Teilnehmer2.ToreErzielt += value.Punkte2;
+            value.Teilnehmer2.ToreErhalten += value.Punkte2;
         }
     }
 }

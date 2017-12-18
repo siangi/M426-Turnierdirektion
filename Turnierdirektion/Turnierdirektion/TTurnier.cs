@@ -37,7 +37,7 @@ namespace Turnierdirektion
 
         public List<Teilnehmer> GetTeilnehmerSortiert()
         {
-            List<Teilnehmer> SortedList = Teilnehmer.OrderByDescending(o => o.Punkte).ToList();
+            List<Teilnehmer> SortedList = Teilnehmer.OrderByDescending(o => o.Punkte).ThenByDescending(o => o.ToreErzielt - o.ToreErhalten).ThenByDescending(o => o.ToreErzielt).ToList();
 
             return SortedList;
         }

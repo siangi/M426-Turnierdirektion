@@ -18,6 +18,7 @@ namespace Turnierdirektion
         public void MatchPunkteVerteilen(Match Value)
         {
             SetSiegerVerlierer(Value);
+            SetTordifferenz(Value);
 
             // Bei unentschieden werden die Variabeln nicht abgefüllt 
             if (Sieger == null && Verlierer == null)
@@ -31,6 +32,7 @@ namespace Turnierdirektion
                 Verlierer.Punkte += PUNKTE_VERLOREN;
             }
         }
+
 
         private void SetSiegerVerlierer(Match Value)
         {
@@ -47,6 +49,15 @@ namespace Turnierdirektion
                 Sieger = Value.Teilnehmer2;
                 Verlierer = Value.Teilnehmer1;
             }
+        }
+
+        private void SetTordifferenz(Match value)
+        {
+            value.Teilnehmer1.ToreErzielt += value.Punkte1;
+            value.Teilnehmer1.ToreErhalten += value.Punkte2;
+
+            value.Teilnehmer2.ToreErzielt += value.Punkte2;
+            value.Teilnehmer2.ToreErhalten += value.Punkte1;
         }
     }
 }
