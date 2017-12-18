@@ -17,7 +17,6 @@ namespace Turnierdirektion
         public event SaveMatchMethod OnSaveMatch { add { m_OnSavematch = value; } remove { m_OnSavematch = null; } }
 
         private List<Teilnehmer> m_TeilnehmerListe;
-        
 
         public MatchControl(List<Teilnehmer> teilnehmerListe)
         {
@@ -35,11 +34,15 @@ namespace Turnierdirektion
         {
             var heimTeilnehmer = m_TeilnehmerListe.FirstOrDefault(tn => tn.Name == cmbHeim.Text);
             var gastTeilnehmer = m_TeilnehmerListe.FirstOrDefault(tn => tn.Name == cmbGast.Text);
-            var heimtore = int.Parse(txtHeimtore.Text);
-            var gasttore = int.Parse(txtGasttore.Text);
 
-            if (m_OnSavematch != null && cmbHeim.SelectedItem != cmbGast.SelectedItem)
-                m_OnSavematch(heimTeilnehmer, gastTeilnehmer, heimtore, gasttore, chkVerlaengerung.Checked);
+            if (int.TryParse(txtHeimtore.Text, out int heimtore) && int.TryParse(txtGasttore.Text, out int gasttore))
+            {
+                if (m_OnSavematch != null && cmbHeim.SelectedItem != cmbGast.SelectedItem)
+                {
+                    m_OnSavematch(heimTeilnehmer, gastTeilnehmer, heimtore, gasttore, chkVerlaengerung.Checked);
+                }
+            }
+
         }
     }
 }

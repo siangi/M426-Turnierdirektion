@@ -35,3 +35,17 @@ C:\Users\Simon\Documents\Schule\M426-Turnierdirektion\Turnierdirektion\Turnierdi
 C:\Users\Simon\Documents\Schule\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.TeilnehmerDialog.resources
 C:\Users\Simon\Documents\Schule\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.Properties.Resources.resources
 C:\Users\Simon\Documents\Schule\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.csproj.GenerateResource.Cache
+P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\bin\Debug\Turnierdirektion.exe.config
+P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\bin\Debug\Turnierdirektion.exe
+P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\bin\Debug\Turnierdirektion.pdb
+P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.csprojResolveAssemblyReference.cache
+P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.DirektionView.resources
+P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.ErstellenView.resources
+P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.MatchControl.resources
+P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.TeilnehmerDialog.resources
+P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.Properties.Resources.resources
+P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.ZuschauerView.resources
+P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.csproj.GenerateResource.Cache
+P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.csproj.CoreCompileInputs.cache
+P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.exe
+P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.pdb

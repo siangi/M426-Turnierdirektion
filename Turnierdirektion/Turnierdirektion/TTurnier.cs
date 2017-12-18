@@ -35,7 +35,7 @@ namespace Turnierdirektion
             InvokePropertyChanged("MatchSaved");
         }
 
-        public List<Teilnehmer> GetTeilnehemrSortiert()
+        public List<Teilnehmer> GetTeilnehmerSortiert()
         {
             List<Teilnehmer> SortedList = Teilnehmer.OrderByDescending(o => o.Punkte).ToList();
 

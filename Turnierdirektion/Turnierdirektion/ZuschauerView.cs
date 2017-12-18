@@ -25,7 +25,22 @@ namespace Turnierdirektion
         {
             if (PropertyMessage == "MatchSaved")
             {
-                Rangliste = Model.GetTeilnehemrSortiert();
+                Rangliste = Model.GetTeilnehmerSortiert();
+            }
+            TabelleAnzeigen();
+        }
+
+        private void TabelleAnzeigen()
+        {
+            lstTabelle.Items.Clear();
+            for (int i = 0; i < Rangliste.Count; i++)
+            {
+                var teilnehmer = Rangliste[i];
+                var lstItem = new ListViewItem((i + 1).ToString());
+                lstItem.SubItems.Add(teilnehmer.Name);
+                lstItem.SubItems.Add(teilnehmer.Punkte.ToString());
+
+                lstTabelle.Items.Add(lstItem);
             }
         }
     }
