@@ -16,7 +16,7 @@ namespace Turnierdirektion
         {
         //    Application.EnableVisualStyles();
         //    Application.SetCompatibleTextRenderingDefault(false);
-            THauptController MainControl = new THauptController();
+            HauptController MainControl = new HauptController();
             MainControl.Run();
         }
     }

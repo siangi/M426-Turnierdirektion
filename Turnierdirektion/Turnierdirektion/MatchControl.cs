@@ -17,6 +17,7 @@ namespace Turnierdirektion
     {
         private SaveMatchMethod m_OnSavematch = null;
         public delegate void SaveMatchMethod(Teilnehmer HeimTeilnehmer, Teilnehmer GastTeilnehmer, int Heimtore, int Gasttore, bool IsVerlaengerung);
+
         /// <summary>
         /// Hier wird eine Funktion zugewiesen, welche die Begegnung speichert.
         /// </summary>
@@ -55,6 +56,7 @@ namespace Turnierdirektion
                 }
             }
 
+            this.Enabled = false;
         }
     }
 }

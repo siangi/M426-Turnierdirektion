@@ -10,7 +10,7 @@ namespace Turnierdirektion
     /// Controller für das erstellte Turnier.
     /// Beobachtetes Objekt
     /// </summary>
-    public class TTurnier : IObservable
+    public class Turnier : IObservable
     {
         private List<IObserver> m_Observers = new List<IObserver>();
         public List<Teilnehmer> Teilnehmer { get; set; }

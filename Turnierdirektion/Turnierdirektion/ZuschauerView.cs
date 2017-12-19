@@ -16,9 +16,9 @@ namespace Turnierdirektion
     public partial class ZuschauerView : Form, IObserver
     {
         List<Teilnehmer> Rangliste = null;
-        TTurnier Model = null;
+        Turnier Model = null;
 
-        public ZuschauerView(TTurnier Model)
+        public ZuschauerView(Turnier Model)
         {
             InitializeComponent();
             this.Model = Model;

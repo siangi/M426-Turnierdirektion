@@ -10,9 +10,9 @@ namespace Turnierdirektion
     /// Hauptcontroller der gesamten Applikation, handelt das Erstellen und die Kommunikation 
     /// zwischen den Views, dem Turnier Controller und dem Model.
     /// </summary>
-    public class THauptController
+    public class HauptController
     {
-        private TTurnier Turnier = new TTurnier();
+        private Turnier Turnier = new Turnier();
         private ErstellenView m_erstellenView = null;
         private DirektionView m_direktionView = null;
         private ZuschauerView m_zuschauerView = null;

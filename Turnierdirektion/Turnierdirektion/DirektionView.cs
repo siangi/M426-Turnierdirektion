@@ -16,10 +16,10 @@ namespace Turnierdirektion
     public partial class DirektionView : Form, IObserver
     {
 
-        List<Teilnehmer> Teilnehmerliste;
-        private TTurnier Model = null;
+        private List<Teilnehmer> Teilnehmerliste;
+        private Turnier Model = null;
 
-        public DirektionView(TTurnier Model, List<Teilnehmer> teilnehmerliste)
+        public DirektionView(Turnier Model, List<Teilnehmer> teilnehmerliste)
         {
             InitializeComponent();
             Teilnehmerliste = teilnehmerliste;

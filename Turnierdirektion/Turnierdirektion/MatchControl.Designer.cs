@@ -39,10 +39,11 @@
             // 
             // btnSpeichern
             // 
-            this.btnSpeichern.Location = new System.Drawing.Point(613, 8);
+            this.btnSpeichern.Location = new System.Drawing.Point(817, 10);
+            this.btnSpeichern.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSpeichern.Name = "btnSpeichern";
-            this.btnSpeichern.Size = new System.Drawing.Size(64, 23);
-            this.btnSpeichern.TabIndex = 17;
+            this.btnSpeichern.Size = new System.Drawing.Size(85, 28);
+            this.btnSpeichern.TabIndex = 5;
             this.btnSpeichern.Text = "Speichern";
             this.btnSpeichern.UseVisualStyleBackColor = true;
             this.btnSpeichern.Click += new System.EventHandler(this.btnSpeichern_Click);
@@ -50,55 +51,61 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(240, 13);
+            this.label3.Location = new System.Drawing.Point(320, 16);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(10, 13);
+            this.label3.Size = new System.Drawing.Size(12, 17);
             this.label3.TabIndex = 16;
             this.label3.Text = ":";
             // 
-            // chkVerlängerung
+            // chkVerlaengerung
             // 
             this.chkVerlaengerung.AutoSize = true;
-            this.chkVerlaengerung.Location = new System.Drawing.Point(489, 9);
-            this.chkVerlaengerung.Name = "chkVerlängerung";
-            this.chkVerlaengerung.Size = new System.Drawing.Size(118, 17);
-            this.chkVerlaengerung.TabIndex = 15;
+            this.chkVerlaengerung.Location = new System.Drawing.Point(652, 11);
+            this.chkVerlaengerung.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chkVerlaengerung.Name = "chkVerlaengerung";
+            this.chkVerlaengerung.Size = new System.Drawing.Size(153, 21);
+            this.chkVerlaengerung.TabIndex = 4;
             this.chkVerlaengerung.Text = "Nach Verlängerung";
             this.chkVerlaengerung.UseVisualStyleBackColor = true;
             // 
             // txtGasttore
             // 
-            this.txtGasttore.Location = new System.Drawing.Point(256, 8);
+            this.txtGasttore.Location = new System.Drawing.Point(341, 10);
+            this.txtGasttore.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtGasttore.Name = "txtGasttore";
-            this.txtGasttore.Size = new System.Drawing.Size(100, 20);
-            this.txtGasttore.TabIndex = 14;
+            this.txtGasttore.Size = new System.Drawing.Size(132, 22);
+            this.txtGasttore.TabIndex = 2;
             // 
             // txtHeimtore
             // 
-            this.txtHeimtore.Location = new System.Drawing.Point(134, 9);
+            this.txtHeimtore.Location = new System.Drawing.Point(179, 11);
+            this.txtHeimtore.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtHeimtore.Name = "txtHeimtore";
-            this.txtHeimtore.Size = new System.Drawing.Size(100, 20);
-            this.txtHeimtore.TabIndex = 13;
+            this.txtHeimtore.Size = new System.Drawing.Size(132, 22);
+            this.txtHeimtore.TabIndex = 1;
             // 
             // cmbGast
             // 
             this.cmbGast.FormattingEnabled = true;
-            this.cmbGast.Location = new System.Drawing.Point(362, 8);
+            this.cmbGast.Location = new System.Drawing.Point(483, 10);
+            this.cmbGast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbGast.Name = "cmbGast";
-            this.cmbGast.Size = new System.Drawing.Size(121, 21);
-            this.cmbGast.TabIndex = 12;
+            this.cmbGast.Size = new System.Drawing.Size(160, 24);
+            this.cmbGast.TabIndex = 3;
             // 
             // cmbHeim
             // 
             this.cmbHeim.FormattingEnabled = true;
-            this.cmbHeim.Location = new System.Drawing.Point(7, 8);
+            this.cmbHeim.Location = new System.Drawing.Point(9, 10);
+            this.cmbHeim.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmbHeim.Name = "cmbHeim";
-            this.cmbHeim.Size = new System.Drawing.Size(121, 21);
-            this.cmbHeim.TabIndex = 11;
+            this.cmbHeim.Size = new System.Drawing.Size(160, 24);
+            this.cmbHeim.TabIndex = 0;
             // 
             // MatchControl
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.btnSpeichern);
             this.Controls.Add(this.label3);
@@ -107,8 +114,9 @@
             this.Controls.Add(this.txtHeimtore);
             this.Controls.Add(this.cmbGast);
             this.Controls.Add(this.cmbHeim);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MatchControl";
-            this.Size = new System.Drawing.Size(687, 41);
+            this.Size = new System.Drawing.Size(916, 50);
             this.ResumeLayout(false);
             this.PerformLayout();
 

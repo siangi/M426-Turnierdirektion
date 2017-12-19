@@ -76,8 +76,8 @@
     <Compile Include="IObserver.cs" />
     <Compile Include="Match.cs" />
     <Compile Include="Teilnehmer.cs" />
-    <Compile Include="THauptController.cs" />
-    <Compile Include="TTurnier.cs" />
+    <Compile Include="HauptController.cs" />
+    <Compile Include="Turnier.cs" />
     <Compile Include="ZuschauerView.cs">
       <SubType>Form</SubType>
     </Compile>

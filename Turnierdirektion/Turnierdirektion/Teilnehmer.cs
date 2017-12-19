@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Turnierdirektion
 {
     /// <summary>
-    /// Datgenhalte für einen Teilnehmer, soll keine Logik enthalten.
+    /// Datenhalter für einen Teilnehmer, soll keine Logik enthalten.
     /// </summary>
     public class Teilnehmer
     {
