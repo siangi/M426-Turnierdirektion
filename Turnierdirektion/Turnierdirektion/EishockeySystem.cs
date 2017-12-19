@@ -18,6 +18,9 @@ namespace Turnierdirektion
 
         public void MatchPunkteVerteilen(Match Value)
         {
+            Verlierer = null;
+            Sieger = null;
+
             SetSiegerVerlierer(Value);
             SetTordifferenz(Value);
 
