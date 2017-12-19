@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace Turnierdirektion
 {
+    /// <summary>
+    /// Hauptcontroller der gesamten Applikation, handelt das Erstellen und die Kommunikation 
+    /// zwischen den Views, dem Turnier Controller und dem Model.
+    /// </summary>
     public class THauptController
     {
         private TTurnier Turnier = new TTurnier();
@@ -15,6 +19,10 @@ namespace Turnierdirektion
 
         public static readonly string[] Punktesysteme = { "Fussball (Sieg 3 P. Unentschieden 1 P.)", "Eishockey (Sieg 3P. Sieg nach Nachspielzeit 2 P.)" };
 
+        /// <summary>
+        /// Initiiert das Programm, erstellt und initiiert alle Views, Models und Controller.
+        /// Dabei werden alle Beobachter beim Turnier Controller registriert und dann die Hauptformular angezeigt.
+        /// </summary>
         public void Run()
         {
             m_erstellenView = new ErstellenView(Punktesysteme);
@@ -36,6 +44,11 @@ namespace Turnierdirektion
             m_direktionView.ShowDialog();
         }
 
+        /// <summary>
+        /// Parst die Stringliste vom ErstellenDialog zu einer Teilnehmerliste.
+        /// </summary>
+        /// <param name="StringList"></param>
+        /// <returns></returns>
         private List<Teilnehmer> TeilnehmerFromStringList(List<string> StringList)
         {
             List<Teilnehmer> TeilnehmerList = new List<Teilnehmer>();
@@ -46,6 +59,12 @@ namespace Turnierdirektion
             return TeilnehmerList;
         }
 
+        /// <summary>
+        /// Erstellt das entsprrechende Punktesystem nach Userangabe.
+        /// Abhängig vom Array Punktesysteme
+        /// </summary>
+        /// <param name="ArrayIndex">Index des ausgewählten Punktesystemes im Array</param>
+        /// <returns>Das Punktesystem-Objekt</returns>
         private IPunktesystem CreatePunkteSystem(int ArrayIndex)
         {
             IPunktesystem punktesystem = null;

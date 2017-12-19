@@ -10,10 +10,16 @@ using System.Windows.Forms;
 
 namespace Turnierdirektion
 {
+    /// <summary>
+    /// User Control für die Erfassung und das Speichern einer Begegnung
+    /// </summary>
     public partial class MatchControl : UserControl
     {
         private SaveMatchMethod m_OnSavematch = null;
         public delegate void SaveMatchMethod(Teilnehmer HeimTeilnehmer, Teilnehmer GastTeilnehmer, int Heimtore, int Gasttore, bool IsVerlaengerung);
+        /// <summary>
+        /// Hier wird eine Funktion zugewiesen, welche die Begegnung speichert.
+        /// </summary>
         public event SaveMatchMethod OnSaveMatch { add { m_OnSavematch = value; } remove { m_OnSavematch = null; } }
 
         private List<Teilnehmer> m_TeilnehmerListe;
@@ -30,6 +36,12 @@ namespace Turnierdirektion
             }
         }
 
+        /// <summary>
+        /// Parst die Daten und übergibt sie dann an die OnSaveMatch Methode. Am Ende deaktiviert 
+        /// die Methode dieses Control
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSpeichern_Click(object sender, EventArgs e)
         {
             var heimTeilnehmer = m_TeilnehmerListe.FirstOrDefault(tn => tn.Name == cmbHeim.Text);

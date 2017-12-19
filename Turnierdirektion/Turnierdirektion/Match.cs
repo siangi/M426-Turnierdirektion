@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Turnierdirektion
 {
+    /// <summary>
+    /// Datenahlter für eine Begegnung, soll keine Logik enthalten
+    /// </summary>
     public class Match
     {
         public Match(Teilnehmer teilnehmer1, int punkte1, Teilnehmer teilnehmer2, int punkte2, bool isVerlaengerung)

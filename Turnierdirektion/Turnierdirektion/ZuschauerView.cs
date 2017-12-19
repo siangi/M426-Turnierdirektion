@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace Turnierdirektion
 {
+    /// <summary>
+    /// Ansicht für die Zuschauer, zeigt die momentane Rangliste
+    /// </summary>
     public partial class ZuschauerView : Form, IObserver
     {
         List<Teilnehmer> Rangliste = null;
@@ -21,6 +24,10 @@ namespace Turnierdirektion
             this.Model = Model;
         }
 
+        /// <summary>
+        /// Siehe Interface IObserver
+        /// </summary>
+        /// <param name="PropertyMessage"></param>
         public void OnModelPropertyChanged(string PropertyMessage)
         {
             if (PropertyMessage == "MatchSaved")
@@ -30,6 +37,9 @@ namespace Turnierdirektion
             TabelleAnzeigen();
         }
 
+        /// <summary>
+        /// Esrstellt die Rangliste anhand einer vom Controller erhaltenen Liste.
+        /// </summary>
         private void TabelleAnzeigen()
         {
             lstTabelle.Items.Clear();

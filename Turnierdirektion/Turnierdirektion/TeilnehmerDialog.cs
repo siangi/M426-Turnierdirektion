@@ -10,6 +10,9 @@ using System.Windows.Forms;
 
 namespace Turnierdirektion
 {
+    /// <summary>
+    /// Dialog zum erstellen eines Teilnehmers.
+    /// </summary>
     public partial class TeilnehmerDialog : Form
     {
         public TeilnehmerDialog()

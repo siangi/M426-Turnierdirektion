@@ -46,6 +46,10 @@ namespace Turnierdirektion
             }
         }
 
+        /// <summary>
+        /// Ermittelt den Sieger und Verlierer für die Masterfunktion
+        /// </summary>
+        /// <param name="Value">Match, welches ausgewertet wird.</param>
         private void SetSiegerVerlierer(Match Value)
         {
             if (Value.Punkte1 == Value.Punkte2)
@@ -63,6 +67,10 @@ namespace Turnierdirektion
             }
         }
 
+        /// <summary>
+        /// Aktualisiert die Tordifferenz für die beiden Teilnehmer.
+        /// </summary>
+        /// <param name="value">Match, welches ausgewertet wrid.</param>
         private void SetTordifferenz(Match value)
         {
             value.Teilnehmer1.ToreErzielt += value.Punkte1;

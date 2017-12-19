@@ -10,9 +10,17 @@ using System.Windows.Forms;
 
 namespace Turnierdirektion
 {
+    /// <summary>
+    /// Erstes Fenster das gezeigt wird, hier soll das Turnier erstellt,
+    /// somit die Teams erfasst und das Punktesystem augewählt werden.
+    /// </summary>
     public partial class ErstellenView : Form
     {
         public int SelectedPunkteSystem { get { return cmbPunktesystem.SelectedIndex; } }
+
+        /// <summary>
+        /// Liest alle Teilnehmer als Stringliste aus.
+        /// </summary>
         public List<string> Teilnehmer
         {
             get
@@ -23,7 +31,7 @@ namespace Turnierdirektion
                 {
                     Result.Add(lstTeilnehmer.Items[i].Text);
                 }
-
+                
                 return Result;
             }
         }
@@ -39,6 +47,11 @@ namespace Turnierdirektion
             cmbPunktesystem.Items.AddRange(Punktesysteme);
         }
 
+        /// <summary>
+        /// Fügt ein neuen Teilnhemer über den TeilnehmerDialog hinzu
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnHinzufuegen_Click(object sender, EventArgs e)
         {
             TeilnehmerDialog Dialog = new TeilnehmerDialog();
@@ -50,6 +63,11 @@ namespace Turnierdirektion
             }
         }
 
+        /// <summary>
+        /// Entfernt den ausgewählten Teilnehmer
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnEntfernen_Click(object sender, EventArgs e)
         {
             if (lstTeilnehmer.SelectedItems.Count > 0)

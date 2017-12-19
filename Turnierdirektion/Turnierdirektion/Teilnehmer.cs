@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Turnierdirektion
 {
+    /// <summary>
+    /// Datgenhalte für einen Teilnehmer, soll keine Logik enthalten.
+    /// </summary>
     public class Teilnehmer
     {
         public string Name { get; set; }
