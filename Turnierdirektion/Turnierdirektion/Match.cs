@@ -8,12 +8,13 @@ namespace Turnierdirektion
 {
     public class Match
     {
-        public Match(Teilnehmer teilnehmer1, int punkte1, Teilnehmer teilnehmer2, int punkte2)
+        public Match(Teilnehmer teilnehmer1, int punkte1, Teilnehmer teilnehmer2, int punkte2, bool isVerlaengerung)
         {
             this.Teilnehmer1 = teilnehmer1;
             this.Teilnehmer2 = teilnehmer2;
             this.Punkte1 = punkte1;
             this.Punkte2 = punkte2;
+            this.IsVerlaengerung = isVerlaengerung;
         }
 
         public Teilnehmer Teilnehmer1 { get; set; }

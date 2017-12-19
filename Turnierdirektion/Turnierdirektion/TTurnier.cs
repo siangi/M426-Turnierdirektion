@@ -30,7 +30,7 @@ namespace Turnierdirektion
 
         public void OnMatchSave(Teilnehmer HeimTeilnehmer, Teilnehmer GastTeilnehmer, int Heimtore, int Gasttore, bool IsVerlaengerung)
         {
-            Match Match = new Match(HeimTeilnehmer, Heimtore, GastTeilnehmer, Gasttore);
+            Match Match = new Match(HeimTeilnehmer, Heimtore, GastTeilnehmer, Gasttore, IsVerlaengerung);
             Punktesystem.MatchPunkteVerteilen(Match);
             InvokePropertyChanged("MatchSaved");
         }
