@@ -49,3 +49,16 @@ P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debu
 P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.csproj.CoreCompileInputs.cache
 P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.exe
 P:\Schule\repos\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.pdb
+C:\Users\Simon Gisler\Documents\Modul426 Agile methoden\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\bin\Debug\Turnierdirektion.exe.config
+C:\Users\Simon Gisler\Documents\Modul426 Agile methoden\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\bin\Debug\Turnierdirektion.exe
+C:\Users\Simon Gisler\Documents\Modul426 Agile methoden\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\bin\Debug\Turnierdirektion.pdb
+C:\Users\Simon Gisler\Documents\Modul426 Agile methoden\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.csprojResolveAssemblyReference.cache
+C:\Users\Simon Gisler\Documents\Modul426 Agile methoden\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.DirektionView.resources
+C:\Users\Simon Gisler\Documents\Modul426 Agile methoden\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.ErstellenView.resources
+C:\Users\Simon Gisler\Documents\Modul426 Agile methoden\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.MatchControl.resources
+C:\Users\Simon Gisler\Documents\Modul426 Agile methoden\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.TeilnehmerDialog.resources
+C:\Users\Simon Gisler\Documents\Modul426 Agile methoden\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.Properties.Resources.resources
+C:\Users\Simon Gisler\Documents\Modul426 Agile methoden\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.ZuschauerView.resources
+C:\Users\Simon Gisler\Documents\Modul426 Agile methoden\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.csproj.GenerateResource.Cache
+C:\Users\Simon Gisler\Documents\Modul426 Agile methoden\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.exe
+C:\Users\Simon Gisler\Documents\Modul426 Agile methoden\M426-Turnierdirektion\Turnierdirektion\Turnierdirektion\obj\Debug\Turnierdirektion.pdb

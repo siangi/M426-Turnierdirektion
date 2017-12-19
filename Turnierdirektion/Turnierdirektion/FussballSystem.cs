@@ -36,6 +36,9 @@ namespace Turnierdirektion
 
         private void SetSiegerVerlierer(Match Value)
         {
+            Sieger = null;
+            Verlierer = null;
+            
             if (Value.Punkte1 == Value.Punkte2)
                 return;
             else
