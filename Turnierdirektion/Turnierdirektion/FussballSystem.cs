@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Turnierdirektion
 {
+    /// <summary>
+    /// Punktesystem wie es in den Fussballligen eingesetzt wird.
+    /// </summary>
     class FussballSystem : IPunktesystem
     {
         private const int PUNKTE_SIEG = 3;
@@ -15,6 +18,10 @@ namespace Turnierdirektion
         private Teilnehmer Sieger = null;
         private Teilnehmer Verlierer = null;
 
+        /// <summary>
+        /// Master Funktion, welche die Punkte verteilt.
+        /// </summary>
+        /// <param name="Value">Match, welches ausgewertet werden muss.</param>
         public void MatchPunkteVerteilen(Match Value)
         {
             SetSiegerVerlierer(Value);
@@ -33,7 +40,10 @@ namespace Turnierdirektion
             }
         }
 
-
+        /// <summary>
+        /// Ermittelt den Sieger & Verlierer des Spiels, setzt die Properties.
+        /// </summary>
+        /// <param name="Value">Das Match das ausgewertet wird.</param>
         private void SetSiegerVerlierer(Match Value)
         {
             Sieger = null;
@@ -54,6 +64,10 @@ namespace Turnierdirektion
             }
         }
 
+        /// <summary>
+        /// Setzt die Tordiffernz bei den Teilnehmern.
+        /// </summary>
+        /// <param name="value">Das Match, weleches ausgewertet wird.</param>
         private void SetTordifferenz(Match value)
         {
             value.Teilnehmer1.ToreErzielt += value.Punkte1;

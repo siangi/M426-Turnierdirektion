@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Turnierdirektion
 {
+    /// <summary>
+    /// Punktesystem wie es in den Eishockeyligen eingesetzt werden.
+    /// </summary>
     class EishockeySystem : IPunktesystem
     {
         private const int PUNKTE_SIEG = 3;
@@ -16,8 +19,15 @@ namespace Turnierdirektion
         private Teilnehmer Verlierer = null;
         private Teilnehmer Sieger = null;
 
+        /// <summary>
+        /// Masterfunktion, welche die Punkte an die Teams des Matches verteilt.
+        /// </summary>
+        /// <param name="Value">Match, welches auszuwerten ist.</param>
         public void MatchPunkteVerteilen(Match Value)
         {
+            Sieger = null;
+            Verlierer = null;
+
             SetSiegerVerlierer(Value);
             SetTordifferenz(Value);
 
